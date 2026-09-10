@@ -1,0 +1,45 @@
+/* Self-hosted Traditional Chinese calligraphy, with ink kept behind content. */
+:root{--calligraphy:'LXGW WenKai TC','DFKai-SB','BiauKai',cursive;--ink:#282a25;--red:#92352e;--line:#cdc6b7;font-family:var(--calligraphy);color:var(--ink)}
+body,button,input,textarea,select,h1,h2,h3,.brand,.brand-seal,.image-vertical,.intro-seal,.object-seal span,.business-card>span:last-child,.craft-vertical,.step-number,.print-composition>span:last-child,.paper-composition>span:first-child{font-family:var(--calligraphy)}
+h1,h2,h3{font-weight:700}
+h1{letter-spacing:2px;line-height:1.4}
+.brand{font-size:26px;font-weight:700;letter-spacing:2px}
+.brand-sub{font-size:15px;font-weight:400}
+.nav,.header-contact{font-size:16px}
+.hero-description{font-size:18px;line-height:1.9;letter-spacing:1px;color:#57594f}
+.hero-caption,.hero-footer{font-size:13px}
+.eyebrow,.section-kicker{font-size:15px;letter-spacing:2px}
+.intro-text{font-size:16px;line-height:2;color:#616355}
+.text-link,.solid-button{font-size:16px}
+.service-title h3{font-size:27px}
+.service-title>span{font-size:10px;letter-spacing:.6px}
+.service-item>p{font-size:14px;line-height:1.9;color:#656455}
+.step-tabs button{font-size:15px}
+.step-copy h3{font-size:25px}
+.step-copy p{font-size:16px;line-height:1.9}
+.step-copy{min-height:200px}
+.gallery-heading>p{font-size:15px;color:#676658}
+.work-caption h3{font-size:25px}
+.work-caption>span{font-size:12px}
+.image-note{font-size:12px;color:#777264}
+.faq-item button{font-size:18px}
+.faq-item p,.dialog-content p{font-size:16px;line-height:1.95;color:#626353}
+.contact-circle{font-size:15px}
+.contact-top,.contact-bottom{font-size:14px}
+.footer>span,.footer>a:last-child{font-size:13px}
+.hero,.intro,.services,.gallery,.faq-section,.contact{position:relative;isolation:isolate}
+.hero:before,.intro:before,.services:before,.gallery:before,.faq-section:before,.contact:before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:url('/images/ink-paper.png');background-size:cover;background-position:center;mix-blend-mode:multiply;opacity:.52}
+.hero:before{background-position:left bottom;opacity:.45}
+.intro:before{transform:rotate(180deg);opacity:.65}
+.services:before{opacity:.32;background-position:right top}
+.gallery:before{opacity:.45}
+.faq-section:before{opacity:.27}
+.contact:before{opacity:.38;background-position:bottom right}
+.business-card,.paper-composition,.detail-dialog{background-image:linear-gradient(#f3efe6b8,#f3efe6d9),url('/images/ink-paper.png');background-size:cover}
+.intro-seal{border-color:#9d9685;color:#864139}
+.brand-seal{color:#963b30}
+.contact{background-color:#91392f}
+.craft{background-color:#242920}
+.intro-top:after,.section-heading:after,.gallery-heading:after{height:2px;border-radius:85% 25% 65% 15%;background:linear-gradient(90deg,#823b2c,#a9614866,transparent)}
+@media(max-width:1100px){.nav{font-size:14px;gap:18px}.header{gap:15px}.header-contact{font-size:14px;gap:12px}.brand{font-size:23px}.brand-sub{font-size:12px}.hero-description{font-size:16px}.hero-caption{font-size:11px}.intro-text{font-size:14px}.service-title{flex-direction:column;align-items:flex-start}.step-copy p{font-size:14px}}
+@media(max-width:600px){.brand{font-size:24px}.brand-sub{font-size:12px}.nav{font-size:18px}.eyebrow,.section-kicker{font-size:13px}.hero-description{font-size:16px;line-height:1.9}.hero-caption,.hero-footer{font-size:11px;letter-spacing:.5px}.solid-button,.text-link{font-size:15px}.intro h2{font-size:30px}.intro-text{font-size:14px}.service-title h3{font-size:23px}.service-title>span{font-size:9px}.service-item>p{font-size:12px}.step-tabs button{font-size:14px}.step-copy h3{font-size:23px}.step-copy p{font-size:15px}.gallery-heading>p{font-size:14px}.work-caption h3{font-size:24px}.work-caption>span{font-size:12px}.image-note{font-size:11px}.faq-item button{font-size:16px}.faq-item p,.dialog-content p{font-size:15px}.contact-top{font-size:12px}.contact-bottom{font-size:12px}.contact-circle{font-size:11px}.footer>span,.footer>a:last-child{font-size:12px}.hero:before,.intro:before{background-size:auto 100%;opacity:.38}.dialog-content h2{font-size:27px}}
